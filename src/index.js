@@ -8,7 +8,7 @@ const LATEST_VERSION = /newest\s+([^\,\)]*)(\,|\))/
 const REQUESTED_VERSION = /requested\s+([^\,\)]*)(\,|\))/
 
 let bundler_outdated = () =>
-  vile.spawn("bundler", { args: [ "outdated" ] })
+  vile.spawn("bundle", { args: [ "outdated" ] })
 
 let parse = (regex, text_line) => {
   let m = text_line.match(regex)

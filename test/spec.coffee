@@ -21,7 +21,7 @@ describe "running bundler outdated", ->
       .should.be.fulfilled.notify ->
         setTimeout ->
           vile.spawn.should.have.been
-            .calledWith "bundler", args: [ "outdated" ]
+            .calledWith "bundle", args: [ "outdated" ]
           done()
 
   it "converts bundler outdated text output to issues", ->
