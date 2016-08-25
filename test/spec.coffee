@@ -23,6 +23,7 @@ describe "running bundler outdated", ->
           vile.spawn.should.have.been
             .calledWith "bundle", args: [ "outdated" ]
           done()
+    return
 
   it "converts bundler outdated text output to issues", ->
     bundler_outdated
