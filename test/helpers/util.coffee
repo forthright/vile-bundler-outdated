@@ -43,7 +43,11 @@ Outdated gems included in the bundle:
 
 setup = (vile) ->
   vile.spawn.returns new Promise (resolve) ->
-    resolve bundler_outdated_text
+    resolve {
+      code: 0
+      stdout: bundler_outdated_text
+      stderr: ""
+    }
 
 module.exports =
   issues: issues

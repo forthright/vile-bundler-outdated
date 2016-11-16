@@ -41,8 +41,10 @@ let vile_issue = (text_line) => {
 let parse_notices = (outdated_text) =>
   outdated_text.match(ALL_OUTDATED_GEM_LINES) || []
 
-let into_issues = (outdated_text) =>
-  _.map(parse_notices(outdated_text), vile_issue)
+let into_issues = (spawn_data) => {
+  let outdated_text = _.get(spawn_data, "stdout", "")
+  return _.map(parse_notices(outdated_text), vile_issue)
+}
 
 let punish = (plugin_config) =>
   bundler_outdated().then(into_issues)
