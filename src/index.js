@@ -1,5 +1,5 @@
 let _ = require("lodash")
-let vile = require("@forthright/vile")
+let vile = require("vile")
 
 const ALL_OUTDATED_GEM_LINES = /\*\s.*/ig
 const OUTDATED_GEM_NAME = /\*\s+([^\s]*)/
