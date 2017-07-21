@@ -1,7 +1,7 @@
 {
   "name": "vile-bundler-outdated",
   "version": "0.1.2",
-  "description": "A vile plugin for keeping up to date bundler dependencies.",
+  "description": "Track outdated Ruby gems.",
   "main": "lib/index.js",
   "files": [
     "lib",

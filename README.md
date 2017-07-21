@@ -1,13 +1,11 @@
 # vile-bundler-outdated [![Circle CI](https://circleci.com/gh/forthright/vile-bundler-outdated.svg?style=shield&circle-token=c85edd896691e55d036186ac2231b8ab3d396947)](https://circleci.com/gh/forthright/vile-bundler-outdated) [![score-badge](https://vile.io/api/v0/projects/vile-bundler-outdated/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-bundler-outdated) [![security-badge](https://vile.io/api/v0/projects/vile-bundler-outdated/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-bundler-outdated) [![coverage-badge](https://vile.io/api/v0/projects/vile-bundler-outdated/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-bundler-outdated) [![dependency-badge](https://vile.io/api/v0/projects/vile-bundler-outdated/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-bundler-outdated)
 
-A [vile](https://vile.io) plugin for keeping up to date [bundler](https://github.com/bundler/bundler) dependencies.
+A [vile](https://vile.io) plugin for tracking outdated Ruby gems (via [Bundler](https://github.com/bundler/bundler)).
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
-- [ruby](http://nodejs.org)
-- [rubygems](http://rubygems.org)
+- [Node.js](http://nodejs.org)
+- [Ruby](https://www.ruby-lang.org)
 
 ## Installation
 
@@ -20,7 +18,7 @@ Example:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
+This project uses [Semver](http://semver.org).
 
 ## Licensing
 
@@ -47,8 +45,6 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Maintainers
@@ -62,12 +58,12 @@ and a hacky CLI regex parse is currently used until
 a better option can be implemented.
 
 - `bin` houses any shell based scripts
-- `src` is es6+ syntax compiled with [babel](https://babeljs.io)
+- `src` is es6+ syntax compiled with [Babel](https://babeljs.io)
 - `lib` generated js library
 - `test` any test related code written in coffeescript
 - `.test` generated js test code
 
-## Hacking
+## Developing
 
     cd vile-bundler-outdated
     npm install
