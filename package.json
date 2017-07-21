@@ -1,6 +1,6 @@
 {
   "name": "vile-bundler-outdated",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Track outdated Ruby gems.",
   "main": "lib/index.js",
   "files": [
